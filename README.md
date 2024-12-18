@@ -36,19 +36,8 @@ Mỗi phần tử của feature map được tính bằng cách:
 - **K**: Ma trận kernel, kích thước \( K_h \times K_w \).  
 - **O**: Ma trận đầu ra (feature map), kích thước \( O_h \times O_w \).
 
-### Công thức  
-
-Phần tử tại vị trí \((i, j)\) của ma trận đầu ra \( O \) được tính như sau:
-
-\[
-O(i,j) = \sum_{m=0}^{K_h-1} \sum_{n=0}^{K_w-1} I(i+m, j+n) \cdot K(m,n)
-\]
-
-Trong đó:
-- \( 0 \leq i \leq O_h - 1 \)
-- \( 0 \leq j \leq O_w - 1 \)
-- \( O_h = H - K_h + 1 \) (không padding)
-- \( O_w = W - K_w + 1 \) (không padding)
+### Minh họa phép tính tích chập 2D
+![image](https://github.com/user-attachments/assets/16141771-39e1-43aa-9acc-829296a5ef5c)
 
 
 ---
