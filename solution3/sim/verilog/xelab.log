@@ -1,0 +1,31 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/Vivado/2018.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_do_convolution_top glbl -prj do_convolution.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver --initfile D:/Vivado/2018.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s do_convolution 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/final_conv2d/solution3/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/final_conv2d/solution3/sim/verilog/AESL_autofifo_in_stream_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_in_stream_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/final_conv2d/solution3/sim/verilog/AESL_autofifo_out_stream_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_stream_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/final_conv2d/solution3/sim/verilog/do_convolution.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_do_convolution_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/final_conv2d/solution3/sim/verilog/do_convolution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module do_convolution
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/final_conv2d/solution3/sim/verilog/do_convolution_libkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module do_convolution_libkb_ram
+INFO: [VRFC 10-311] analyzing module do_convolution_libkb
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.do_convolution_libkb_ram
+Compiling module xil_defaultlib.do_convolution_libkb(DataWidth=3...
+Compiling module xil_defaultlib.do_convolution
+Compiling module xil_defaultlib.AESL_autofifo_out_stream_V
+Compiling module xil_defaultlib.AESL_autofifo_in_stream_V
+Compiling module xil_defaultlib.apatb_do_convolution_top
+Compiling module work.glbl
+Built simulation snapshot do_convolution

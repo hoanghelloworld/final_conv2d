@@ -1,0 +1,189 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Dec 17 18:19:14 2024
+# Process ID: 6520
+# Current directory: D:/Vivado/final_conv2d/final_conv2d/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14100 D:\Vivado\final_conv2d\final_conv2d\project_1\project_1.xpr
+# Log file: D:/Vivado/final_conv2d/final_conv2d/project_1/vivado.log
+# Journal file: D:/Vivado/final_conv2d/final_conv2d/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/final_conv2d/final_conv2d/solution3/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 900.191 ; gain = 167.559
+update_compile_order -fileset sources_1
+open_bd_design {D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:hls:do_convolution:0.0 - do_convolution_0
+Adding cell -- xilinx.com:ip:axi_fifo_mm_s:4.1 - axi_fifo_mm_s_0
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_5> from BD file <D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.090 ; gain = 105.633
+make_wrapper -files [get_files D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd] -top
+WARNING: [BD 41-927] Following properties on pin /do_convolution_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_5_processing_system7_0_0_FCLK_CLK0 
+Wrote  : <D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd> 
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/synth/design_5.vhd
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/sim/design_5.vhd
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd
+add_files -norecurse D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'design_5.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/ui/bd_21562dd4.ui> 
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/synth/design_5.vhd
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/sim/design_5.vhd
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd
+WARNING: [IP_Flow 19-5160] IP 'design_5_processing_system7_0_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'design_5_processing_system7_0_0' detected simulation language mismatch. Simulation type 'tlm_dpi' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block do_convolution_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_fifo_mm_s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/ip/design_5_auto_pc_0/design_5_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hw_handoff/design_5.hwh
+Generated Block Design Tcl file D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hw_handoff/design_5_bd.tcl
+Generated Hardware Definition File D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/synth/design_5.hwdef
+[Tue Dec 17 18:24:06 2024] Launched design_5_auto_pc_0_synth_1, design_5_processing_system7_0_0_synth_1, design_5_do_convolution_0_0_synth_1, design_5_axi_timer_0_0_synth_1, design_5_axi_fifo_mm_s_0_0_synth_1, design_5_xbar_0_synth_1, design_5_rst_ps7_0_100M_0_synth_1, synth_1...
+Run output will be captured here:
+design_5_auto_pc_0_synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/design_5_auto_pc_0_synth_1/runme.log
+design_5_processing_system7_0_0_synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/design_5_processing_system7_0_0_synth_1/runme.log
+design_5_do_convolution_0_0_synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/design_5_do_convolution_0_0_synth_1/runme.log
+design_5_axi_timer_0_0_synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/design_5_axi_timer_0_0_synth_1/runme.log
+design_5_axi_fifo_mm_s_0_0_synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/design_5_axi_fifo_mm_s_0_0_synth_1/runme.log
+design_5_xbar_0_synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/design_5_xbar_0_synth_1/runme.log
+design_5_rst_ps7_0_100M_0_synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/design_5_rst_ps7_0_100M_0_synth_1/runme.log
+synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/synth_1/runme.log
+[Tue Dec 17 18:24:07 2024] Launched impl_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1271.703 ; gain = 130.801
+file mkdir D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/constrs_1
+file mkdir D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/constrs_1/new
+close [ open D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/constrs_1/new/design_constraints.xdc w ]
+add_files -fileset constrs_1 D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/constrs_1/new/design_constraints.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec 17 18:35:57 2024] Launched synth_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/synth_1/runme.log
+[Tue Dec 17 18:35:57 2024] Launched impl_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec 17 18:40:19 2024] Launched synth_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/synth_1/runme.log
+[Tue Dec 17 18:40:19 2024] Launched impl_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec 17 18:47:28 2024] Launched synth_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/synth_1/runme.log
+[Tue Dec 17 18:47:28 2024] Launched impl_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_USB_RESET_ENABLE {0} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+Wrote  : <D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd> 
+reset_run synth_1
+reset_run design_5_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [BD 41-927] Following properties on pin /do_convolution_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_5_processing_system7_0_0_FCLK_CLK0 
+Wrote  : <D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd> 
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/synth/design_5.vhd
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/sim/design_5.vhd
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd
+WARNING: [IP_Flow 19-5160] IP 'design_5_processing_system7_0_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'design_5_processing_system7_0_0' detected simulation language mismatch. Simulation type 'tlm_dpi' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block do_convolution_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_fifo_mm_s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/ip/design_5_auto_pc_0/design_5_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hw_handoff/design_5.hwh
+Generated Block Design Tcl file D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hw_handoff/design_5_bd.tcl
+Generated Hardware Definition File D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/synth/design_5.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_auto_pc_0, cache-ID = 6cea5816ef956c05; cache size = 7.023 MB.
+[Tue Dec 17 18:55:31 2024] Launched design_5_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_5_processing_system7_0_0_synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/design_5_processing_system7_0_0_synth_1/runme.log
+synth_1: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/synth_1/runme.log
+[Tue Dec 17 18:55:31 2024] Launched impl_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1532.785 ; gain = 102.512
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 215 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2304.719 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2304.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 14 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 2 instances
+
+open_run: Time (s): cpu = 00:01:15 ; elapsed = 00:01:01 . Memory (MB): peak = 2383.891 ; gain = 851.105
+open_bd_design {D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd}
+validate_bd_design -force
+WARNING: [BD 41-927] Following properties on pin /do_convolution_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_5_processing_system7_0_0_FCLK_CLK0 
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2401.590 ; gain = 0.000
+generate_target all [get_files  D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd]
+INFO: [BD 41-1662] The design 'design_5.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd> 
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/synth/design_5.vhd
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/sim/design_5.vhd
+VHDL Output written to : D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block do_convolution_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_fifo_mm_s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/ip/design_5_auto_pc_0/design_5_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hw_handoff/design_5.hwh
+Generated Block Design Tcl file D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hw_handoff/design_5_bd.tcl
+Generated Hardware Definition File D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/synth/design_5.hwdef
+catch { config_ip_cache -export [get_ips -all design_5_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_auto_pc_0, cache-ID = 6cea5816ef956c05; cache size = 7.760 MB.
+export_ip_user_files -of_objects [get_files D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd]
+export_simulation -of_objects [get_files D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd] -directory D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.ip_user_files -ipstatic_source_dir D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ERROR: [Vivado 12-4452] The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 
+ 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export.
+ 2. There are no block design hardware handoff files. Check the vivado log messages for more details. 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec 17 19:15:30 2024] Launched synth_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/synth_1/runme.log
+[Tue Dec 17 19:15:31 2024] Launched impl_1...
+Run output will be captured here: D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 18 01:38:57 2024...

@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Generating csim.exe
+obj/conv.o: In function `Z16my_filter_bufferRN3hls6streamIiEES2_PA3_i':
+D:\Vivado\final_conv2d\final_conv2d\solution2\csim\build/../../../../conv.cpp:28: multiple definition of `my_filter_buffer(hls::stream<int>&, hls::stream<int>&, int (*) [3])'
+obj/test_conv.o:D:\Vivado\final_conv2d\final_conv2d\solution2\csim\build/../../../../conv.cpp:28: first defined here
+collect2: ld returned 1 exit status
+make: *** [csim.exe] Error 1
+CRITICAL WARNING: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

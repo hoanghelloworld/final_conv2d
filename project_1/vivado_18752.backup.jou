@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Dec 17 01:49:00 2024
+# Process ID: 18752
+# Current directory: D:/Vivado/final_conv2d/final_conv2d/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17288 D:\Vivado\final_conv2d\final_conv2d\project_1\project_1.xpr
+# Log file: D:/Vivado/final_conv2d/final_conv2d/project_1/vivado.log
+# Journal file: D:/Vivado/final_conv2d/final_conv2d/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}

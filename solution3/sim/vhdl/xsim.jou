@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Dec 18 16:21:38 2024
+# Process ID: 11772
+# Current directory: D:/Vivado/final_conv2d/solution3/sim/vhdl
+# Command line: xsim.exe -mode tcl -source {xsim.dir/do_convolution/xsim_script.tcl}
+# Log file: D:/Vivado/final_conv2d/solution3/sim/vhdl/xsim.log
+# Journal file: D:/Vivado/final_conv2d/solution3/sim/vhdl\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/do_convolution/xsim_script.tcl
+source do_convolution.tcl

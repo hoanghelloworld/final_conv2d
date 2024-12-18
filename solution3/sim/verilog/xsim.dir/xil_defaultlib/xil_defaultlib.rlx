@@ -1,0 +1,9 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+D:/Vivado/final_conv2d/solution3/sim/verilog/AESL_autofifo_in_stream_V.v,1734513580,systemVerilog,,,,AESL_autofifo_in_stream_V,D:/Vivado/2018.1/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,
+D:/Vivado/final_conv2d/solution3/sim/verilog/AESL_autofifo_out_stream_V.v,1734513580,systemVerilog,,,,AESL_autofifo_out_stream_V,D:/Vivado/2018.1/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,
+D:/Vivado/final_conv2d/solution3/sim/verilog/do_convolution.autotb.v,1734513580,systemVerilog,,,,apatb_do_convolution_top,D:/Vivado/2018.1/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,
+D:/Vivado/final_conv2d/solution3/sim/verilog/do_convolution.v,1734513505,systemVerilog,,,,do_convolution,D:/Vivado/2018.1/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,
+D:/Vivado/final_conv2d/solution3/sim/verilog/do_convolution_libkb.v,1734513505,systemVerilog,,,,do_convolution_libkb;do_convolution_libkb_ram,D:/Vivado/2018.1/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims_ver;xil_defaultlib,,,,,,

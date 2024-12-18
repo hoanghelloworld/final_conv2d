@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../conv_v2/test_conv.cpp in debug mode
+   Generating csim.exe
+HLS Output (after filtering):
+65 74 83 
+110 119 128 
+155 164 173 
+Convolution Output (Reference):
+65 74 83 
+110 119 128 
+155 164 173 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

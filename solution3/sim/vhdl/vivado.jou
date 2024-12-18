@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Dec 18 16:21:49 2024
+# Process ID: 3684
+# Current directory: D:/Vivado/final_conv2d/solution3/sim/vhdl
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: D:/Vivado/final_conv2d/solution3/sim/vhdl/vivado.log
+# Journal file: D:/Vivado/final_conv2d/solution3/sim/vhdl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config D:/Vivado/final_conv2d/solution3/sim/vhdl/do_convolution.wcfg
+save_wave_config {D:/Vivado/final_conv2d/solution3/sim/vhdl/do_convolution.wcfg}
+save_wave_config {D:/Vivado/final_conv2d/solution3/sim/vhdl/do_convolution.wcfg}
+save_wave_config {D:/Vivado/final_conv2d/solution3/sim/vhdl/do_convolution.wcfg}
+close_sim

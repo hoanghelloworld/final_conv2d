@@ -1,0 +1,8 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv work "glbl.v"
+vhdl xil_defaultlib "AESL_autofifo_in_stream_V.vhd"
+vhdl xil_defaultlib "AESL_autofifo_out_stream_V.vhd"
+vhdl xil_defaultlib "do_convolution.autotb.vhd"
+vhdl xil_defaultlib "do_convolution.vhd"
+vhdl xil_defaultlib "do_convolution_libkb.vhd"
+

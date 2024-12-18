@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Dec 17 18:19:14 2024
+# Process ID: 6520
+# Current directory: D:/Vivado/final_conv2d/final_conv2d/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14100 D:\Vivado\final_conv2d\final_conv2d\project_1\project_1.xpr
+# Log file: D:/Vivado/final_conv2d/final_conv2d/project_1/vivado.log
+# Journal file: D:/Vivado/final_conv2d/final_conv2d/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd}
+make_wrapper -files [get_files D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd] -top
+add_files -norecurse D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+file mkdir D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/constrs_1
+file mkdir D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/constrs_1/new
+close [ open D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/constrs_1/new/design_constraints.xdc w ]
+add_files -fileset constrs_1 D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/constrs_1/new/design_constraints.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_USB_RESET_ENABLE {0} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_5_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd}
+validate_bd_design -force
+generate_target all [get_files  D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd]
+catch { config_ip_cache -export [get_ips -all design_5_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd]
+export_simulation -of_objects [get_files D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.srcs/sources_1/bd/design_5/design_5.bd] -directory D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.ip_user_files -ipstatic_source_dir D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/Vivado/final_conv2d/final_conv2d/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
