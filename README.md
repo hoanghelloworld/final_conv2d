@@ -37,17 +37,19 @@ Mỗi phần tử của feature map được tính bằng cách:
 - **O**: Ma trận đầu ra (feature map), kích thước \( O_h \times O_w \).
 
 ### Công thức  
-Phần tử tại vị trí \((i, j)\) của ma trận đầu ra \( O \) được tính như sau:  
+
+Phần tử tại vị trí \((i, j)\) của ma trận đầu ra \( O \) được tính như sau:
 
 \[
 O(i,j) = \sum_{m=0}^{K_h-1} \sum_{n=0}^{K_w-1} I(i+m, j+n) \cdot K(m,n)
 \]
 
-Trong đó:  
-- \( 0 \leq i \leq O_h - 1 \)  
-- \( 0 \leq j \leq O_w - 1 \)  
-- \( O_h = H - K_h + 1 \) (không padding)  
+Trong đó:
+- \( 0 \leq i \leq O_h - 1 \)
+- \( 0 \leq j \leq O_w - 1 \)
+- \( O_h = H - K_h + 1 \) (không padding)
 - \( O_w = W - K_w + 1 \) (không padding)
+
 
 ---
 
